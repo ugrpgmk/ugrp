@@ -36,13 +36,12 @@
             color: #cccccc;
         }
 
-        /* Center button container */
         .center-btn {
             height: calc(100vh - 80px);
             display: flex;
-            justify-content: center; /* vertical centering */
+            justify-content: center;
             align-items: center;
-            flex-direction: column;  /* stack text and button */
+            flex-direction: column;
         }
 
         .copy-btn {
@@ -64,15 +63,16 @@
         .copy-btn:active {
             transform: scale(0.97);
         }
+
         .footer {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-        text-shadow: 0 0 5px black;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 0 0 5px black;
         }
     </style>
 </head>
@@ -80,18 +80,18 @@
 <body>
 
     <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://discord.gg/rc3YSEfw">Discord</a></li>
-        <li><a href="https://www.facebook.com/share/g/15PSag2hPDK/">Facebook</a></li>
-        <li><a href="https://unitedgamingmk.createaforum.com">Forum</a></li>
+        <li><a href="index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
+        <li><a href="https://discord.gg/shKVhY75kg" target="_blank" rel="noopener noreferrer">Discord</a></li>
+        <li><a href="https://www.facebook.com/share/g/15PSag2hPDK/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://unitedgamingmk.createaforum.com" target="_blank" rel="noopener noreferrer">Forum</a></li>
     </ul>
 
     <div class="center-btn">
-    <h1 style="color: white; text-align: center; margin: 0; font-size: 50px;">Добредојдовте</h1>
-    <p style="color: white; text-align: center; margin: 10px 0 20px 0; font-size: 28px;">
-        Најдобрата забава на СА-МП чека на тебе
-    </p>
-    <button class="copy-btn" onclick="copyIP()">Придружи се сега</button>
+        <h1 style="color: white; text-align: center; margin: 0; font-size: 50px;">Добредојдовте</h1>
+        <p style="color: white; text-align: center; margin: 10px 0 20px 0; font-size: 28px;">
+            Најдобрата забава на СА-МП чека на тебе
+        </p>
+        <button class="copy-btn" onclick="copyIP()">Придружи се сега</button>
     </div>
 
     <script>
@@ -103,7 +103,8 @@
     </script>
 
     <footer class="footer">
-    © 2025 UnitedGaming Roleplay | All Rights Reserved
+        © 2025 UnitedGaming Roleplay | All Rights Reserved
     </footer>
+
 </body>
 </html>
