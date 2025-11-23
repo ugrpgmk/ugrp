@@ -7,32 +7,28 @@
     <link rel="icon" type="image/png" href="cropped-zsouq5v.png">
 
     <style>
-        /* Basic reset and background */
         body {
             background-image: url("undefined - Imgur.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
         }
 
-        /* Navigation bar */
         .nav {
             list-style: none;
-            padding: 15px 10px;
+            padding: 20px 0;
             margin: 0;
             display: flex;
             justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap; /* Wrap nav items on small screens */
+            gap: 30px;
         }
 
         .nav a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
         }
 
@@ -40,32 +36,15 @@
             color: #cccccc;
         }
 
-        /* Center content container */
+        /* Center button container */
         .center-btn {
-            min-height: calc(100vh - 80px);
+            height: calc(100vh - 80px);
             display: flex;
-            justify-content: center;
+            justify-content: center; /* vertical centering */
             align-items: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px;
+            flex-direction: column;  /* stack text and button */
         }
 
-        /* Main heading */
-        .center-btn h1 {
-            color: white;
-            margin: 0;
-            font-size: 50px;
-        }
-
-        /* Subheading */
-        .center-btn p {
-            color: white;
-            margin: 10px 0 20px 0;
-            font-size: 28px;
-        }
-
-        /* Button styling */
         .copy-btn {
             background-color: #007BFF;
             color: white;
@@ -85,59 +64,21 @@
         .copy-btn:active {
             transform: scale(0.97);
         }
-
-        /* Footer */
         .footer {
-            width: 100%;
-            text-align: center;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            text-shadow: 0 0 5px black;
-            padding: 10px 0;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .center-btn h1 {
-                font-size: 36px;
-            }
-
-            .center-btn p {
-                font-size: 20px;
-            }
-
-            .copy-btn {
-                padding: 14px 25px;
-                font-size: 18px;
-            }
-
-            .nav a {
-                font-size: 16px;
-                margin: 5px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .center-btn h1 {
-                font-size: 28px;
-            }
-
-            .center-btn p {
-                font-size: 16px;
-            }
-
-            .copy-btn {
-                padding: 12px 20px;
-                font-size: 16px;
-            }
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-shadow: 0 0 5px black;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigation bar -->
     <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="https://discord.gg/rc3YSEfw">Discord</a></li>
@@ -145,19 +86,14 @@
         <li><a href="https://unitedgamingmk.createaforum.com">Forum</a></li>
     </ul>
 
-    <!-- Centered content -->
     <div class="center-btn">
-        <h1>Добредојдовте</h1>
-        <p>Најдобрата забава на СА-МП чека на тебе</p>
-        <button class="copy-btn" onclick="copyIP()">Придружи се сега</button>
+    <h1 style="color: white; text-align: center; margin: 0; font-size: 50px;">Добредојдовте</h1>
+    <p style="color: white; text-align: center; margin: 10px 0 20px 0; font-size: 28px;">
+        Најдобрата забава на СА-МП чека на тебе
+    </p>
+    <button class="copy-btn" onclick="copyIP()">Придружи се сега</button>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        © 2025 UnitedGaming Roleplay | All Rights Reserved
-    </footer>
-
-    <!-- Copy IP script -->
     <script>
         function copyIP() {
             navigator.clipboard.writeText("147.369.123:7777").then(() => {
@@ -165,5 +101,9 @@
             });
         }
     </script>
+
+    <footer class="footer">
+    © 2025 UnitedGaming Roleplay | All Rights Reserved
+    </footer>
 </body>
 </html>
