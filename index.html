@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Gaming</title>
+    <link rel="icon" type="image/png" href="cropped-zsouq5v.png">
+
+    <style>
+        body {
+            background-image: url("undefined - Imgur.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 20px 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #cccccc;
+        }
+
+        /* Center button container */
+        .center-btn {
+            height: calc(100vh - 80px);
+            display: flex;
+            justify-content: center; /* vertical centering */
+            align-items: center;
+            flex-direction: column;  /* stack text and button */
+        }
+
+        .copy-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 18px 35px;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .copy-btn:hover {
+            background-color: #005FCC;
+        }
+
+        .copy-btn:active {
+            transform: scale(0.97);
+        }
+        .footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-shadow: 0 0 5px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://discord.gg/rc3YSEfw">Discord</a></li>
+        <li><a href="https://www.facebook.com/share/g/15PSag2hPDK/">Facebook</a></li>
+        <li><a href="https://unitedgamingmk.createaforum.com">Forum</a></li>
+    </ul>
+
+    <div class="center-btn">
+    <h1 style="color: white; text-align: center; margin: 0; font-size: 50px;">Добредојдовте</h1>
+    <p style="color: white; text-align: center; margin: 10px 0 20px 0; font-size: 28px;">
+        Најдобрата забава на СА-МП чека на тебе
+    </p>
+    <button class="copy-btn" onclick="copyIP()">Придружи се сега</button>
+    </div>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText("147.369.123:7777").then(() => {
+                alert("IP адресата е копирана: 147.369.123:7777");
+            });
+        }
+    </script>
+
+    <footer class="footer">
+    © 2025 UnitedGaming Roleplay | All Rights Reserved
+    </footer>
+</body>
+</html>
